@@ -63,3 +63,10 @@ python -m pip install .
 ```bash
 python object_detection/builders/model_builder_tf2_test.py
 ```
+
+# Custom model traning
+```bash
+mkdir -p workspace/training_demo
+cd workspace/training_demo
+mkdir -p annotations exported-models models pre-trained-models images/test images/train
+```
