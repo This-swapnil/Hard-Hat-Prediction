@@ -45,3 +45,21 @@ echo "TensorFlow/models" >> .gitignore
 cd TensorFlow/models/research
 protoc object_detection/protos/*.proto --python_out=.
 ```
+
+## Install COCO API
+
+```bash
+pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+```
+
+## Install Object Detection API
+
+```bash
+cp object_detection/packages/tf2/setup.py .
+python -m pip install .
+```
+
+## test yout intallation -
+```bash
+python object_detection/builders/model_builder_tf2_test.py
+```
