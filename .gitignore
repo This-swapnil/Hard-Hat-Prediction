@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 TensorFlow/models
 protoc
+workspace/training_demo/images/*
